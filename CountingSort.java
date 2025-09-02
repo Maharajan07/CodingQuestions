@@ -26,13 +26,13 @@ class Solution {
             count[temp]++;
         }
         
-        String res ="";
+        StringBuilder res = new StringBuilder();
         for (int i=0; i<26; i++) {
             for (int j=0; j<count[i]; j++) {
-                res += (char)(i+ 'a');
+                res.append((char)(i+ 'a'));
             }
         }
-        return res;
+        return res.toString();
     }
 }
 
